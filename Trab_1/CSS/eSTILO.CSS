@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.bg-top{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    margin: 15px;
+    margin-right: 250px;
+}
+
+
+
+ul{
+    display: flex;
+    
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.menu li a:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.logo{
+    background-size: cover;
+    margin-left: 250px;
+   
+    
+}
+.logo img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.bg-fundo{
+    width: 100%;
+    overflow: auto;
+    background-image: url(https://www.juicysantos.com.br/wp-content/uploads/2016/06/286781_Papel-de-Parede-Cafe-Feliz_1440x900.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.sop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mv{
+  
+    color: white;
+    text-align: center;
+   
+}
+
+.mv h1{
+
+
+    
+    text-shadow: 5px 5px 1px  black;
+    font-size: 3rem;
+}
+
+.mv p{
+    font-size: 1.3rem;
+    text-shadow: 4px 3px 1px  black;
+}
+
+
+@media (min-width:280px) and (max-width:768px){
+    .bg-top{
+        display: block;
+        
+        
+    }
+
+    .menu{
+        text-align: center;
+        margin: 0px;
+    }
+    ul{
+        
+        display: block;
+    }
+
+    .menu li a{
+        margin: 0px;
+        display: block;
+        border: none;
+    }
+    li{
+        background-color: black;
+
+    }
+
+    .logo{
+        display: block;
+        margin:0px auto;
+        text-align: center;
+    }
+    .logo img{
+        margin:0px auto;
+    }
+
+    .sop{
+        overflow: auto;
+        display: block;
+        text-align: center;        
+        
+    }
+
+    .mv{
+        display: inline-block;
+        margin-top:50%;
+    }
+    .bg-fundo{
+        display: block;
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .menu li a{
+
+        margin: 15px;
+    }
+
+    .bg-top{
+        justify-content:center;
+    }
+}
+
+
